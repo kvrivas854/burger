@@ -1,5 +1,5 @@
 // Imports mysql connection
-var connection = require("..config/connection.js");
+var connection = require("../config/connection.js");
 
 function printQuestionMarks(num) {
     var arr = [];
