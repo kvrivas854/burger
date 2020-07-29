@@ -19,9 +19,9 @@
                 {{#each burger}}
                     {{#unless this.devoured}}
                     <li class="li-item">
-                        {{this.burger_name}}
+                        {{this.burgerName}}
                         <br>
-                        <button type="submit" class="btn devour-btn" data-id={{this.id}}>Devour {{this.burger_name}}</button>
+                        <button type="submit" class="btn devour-btn" data-id={{this.id}}>Devour {{this.burgerName}}</button>
                     </li>
                     {{/unless}}
                 {{/each}}
@@ -52,7 +52,7 @@
                 {{#each burger}}
                     {{#if this.devoured}}
                         <li class="li-item devoured-item">
-                            {{this.burger_name}}
+                            {{this.burgerName}}
                         </li>
                     {{/if}}
                 {{/each}}
