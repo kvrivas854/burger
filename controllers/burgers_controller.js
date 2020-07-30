@@ -25,7 +25,7 @@ router.POST("/api/burger", function(req,res) {
     });
 });
 
-router.put("api/burger/:id", function(req, res){
+router.put("/burger/:id", function(req, res){
     console.log("inside put route");
     var condition = "id = " + req.params.id;
   
