@@ -6,14 +6,13 @@ $(".devour-btn").on("click", function(event) {
     };
 
     // Send the PUT request.
-    $.ajax("/burger/" + id, {
+    $.ajax({
+      url: "/burger/" + id, 
       type: "PUT",
       data: newState
-    }).then(
-      function() {
-          console.log("Inside put route");
+    }).then(() => {
+          console.log("successful");
         // Reload the page to get the updated list
         location.reload();
-      }
-    );
+      })
   });
